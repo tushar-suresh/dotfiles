@@ -2,6 +2,7 @@
 alias ll='ls -lFtrh'
 alias kk='ls -lFth'
 alias c='clear'
+alias cleanpyc='find . -name *.pyc -delete'
 
 # Copy stdin content to clipboard
 alias x='xclip -selection clipboard'
