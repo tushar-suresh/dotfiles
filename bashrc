@@ -112,6 +112,10 @@ _ssh_py() {
 }
 complete -F _ssh_py srv
 
+ag_replace() {
+    ag -l $1 | xargs sed -i -e "s/$1/$2/g"
+}
+
 [[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh
 [[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
 source /usr/local/bin/virtualenvwrapper.sh
