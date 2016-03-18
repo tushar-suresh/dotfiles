@@ -126,6 +126,4 @@ export NODE_ENV=development
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
-
-#setxkbmap -option caps:escape
-#xmodmap -e "keycode 125 = grave"
+. ~/.bashrc_local
