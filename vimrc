@@ -13,6 +13,7 @@ Plugin 'kien/ctrlp.vim.git'
 Plugin 'scrooloose/syntastic.git'
 Plugin 'majutsushi/tagbar.git'
 Plugin 'derekwyatt/vim-scala'
+Plugin 'rking/ag.vim.git'
 " Plugin 'altercation/vim-colors-solarized.git'
 
 " All of your Plugins must be added before the following line
