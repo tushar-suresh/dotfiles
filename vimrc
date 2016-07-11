@@ -36,9 +36,8 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_check_on_w = 0
-let g:syntastic_python_checkers = ['pep8']
-let g:syntastic_python_pep8_args='--ignore=E501'
-let g:pep8_ignore='E501'
+let g:syntastic_python_checkers = ['flake8']
+let g:syntastic_python_flake8_args='--ignore E501'
 
 " NERDTree settings
 let NERDTreeIgnore = ['\.pyc$', '__pycache__', 'dist', 'target', '.*egg-info$', 'checkpoints'] 
