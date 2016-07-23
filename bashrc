@@ -124,6 +124,6 @@ export PIP_VIRTUALENV_BASE=/home/iamtushar/.virtualenvs
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export NODE_ENV=development
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+export PROMPT_COMMAND="echo -n \[\$(date +%T)\]\ "
+
 . ~/.bashrc_local
