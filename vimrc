@@ -12,7 +12,7 @@ Plugin 'tpope/vim-fugitive.git'
 Plugin 'kien/ctrlp.vim.git'
 Plugin 'scrooloose/syntastic.git'
 Plugin 'majutsushi/tagbar.git'
-Plugin 'derekwyatt/vim-scala'
+Plugin 'derekwyatt/vim-scala.git'
 Plugin 'rking/ag.vim.git'
 " Plugin 'altercation/vim-colors-solarized.git'
 
