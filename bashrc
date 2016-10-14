@@ -99,29 +99,12 @@ cal
 
 cowsay `fortune`
 
-# Bash completion for the ec2inventory srv script
-_ssh_py() {
-    local cur opts
-
-    cur="${COMP_WORDS[COMP_CWORD]}"
-    local IFS=$'\n'
-    opts=$( ec2inventory --complete --env=\* --cache)
-    COMPREPLY=( $(compgen -W "$opts" -- $cur ) )
-    return 0
-}
-complete -F _ssh_py srv
-
 ag_replace() {
     ag -l $1 | xargs sed -i -e "s/$1/$2/g"
 }
 
-[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh
-[[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
 source /usr/local/bin/virtualenvwrapper.sh
 export PIP_VIRTUALENV_BASE=/home/iamtushar/.virtualenvs
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-export NODE_ENV=development
 
 export PROMPT_COMMAND="echo -n \[\$(date +%T)\]\ "
 
