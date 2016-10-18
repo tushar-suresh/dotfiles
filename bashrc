@@ -104,6 +104,7 @@ ag_replace() {
 }
 
 source /usr/local/bin/virtualenvwrapper.sh
+source /usr/share/bash-completion/completions/git
 export PIP_VIRTUALENV_BASE=/home/iamtushar/.virtualenvs
 
 export PROMPT_COMMAND="echo -n \[\$(date +%T)\]\ "
