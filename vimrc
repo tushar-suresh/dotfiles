@@ -52,8 +52,8 @@ noremap <F4> :set hlsearch! hlsearch?<CR>
 noremap <F8> :TagbarToggle<CR>
 
 set expandtab
-set backupdir=~/tmp,.
-set directory=~/tmp,.
+set backupdir=~/vim-tmp,.
+set directory=~/vim-tmp,.
 set foldmethod=indent
 set clipboard+=unnamed
 set number
