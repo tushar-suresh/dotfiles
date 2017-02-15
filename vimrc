@@ -51,6 +51,8 @@ noremap <F4> :set hlsearch! hlsearch?<CR>
 " TagBar toggle
 noremap <F8> :TagbarToggle<CR>
 
+imap jj <Esc>
+
 set expandtab
 set backupdir=~/vim-tmp,.
 set directory=~/vim-tmp,.
