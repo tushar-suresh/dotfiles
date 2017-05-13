@@ -60,3 +60,15 @@ set foldmethod=indent
 set clipboard+=unnamed
 set number
 set hlsearch
+
+" Automatically reload files if the change on the disk
+set autoread
+
+" Simplify split navigation
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+" vv to generate new vertical split
+nnoremap <silent> vv <C-w>v

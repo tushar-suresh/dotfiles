@@ -7,4 +7,5 @@ ln -s ${BASEDIR}/vimrc ~/.vimrc
 
 # bash
 ln -s ${BASEDIR}/bashrc ~/.bashrc
+ln -s ${BASEDIR}/inputrc ~/.inputrc
 ln -s ${BASEDIR}/bash_aliases ~/.bash_aliases
