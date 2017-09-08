@@ -25,3 +25,8 @@ alias est='TZ=America/New_York date'
 alias cst='TZ=America/Chicago date'
 alias pst='TZ=America/Los_Angeles date'
 alias utc='TZ=UTC date'
+
+# Verbose by default
+alias rm='rm -v'
+alias cp='cp -v'
+alias mv='mv -v'
