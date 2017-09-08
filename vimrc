@@ -13,6 +13,7 @@ Plugin 'scrooloose/syntastic.git'
 Plugin 'majutsushi/tagbar.git'
 Plugin 'derekwyatt/vim-scala.git'
 Plugin 'rking/ag.vim.git'
+Plugin 'tpope/vim-fugitive.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
