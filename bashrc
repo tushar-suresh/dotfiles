@@ -54,7 +54,12 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    # Bash
+    red=$(tput setaf 1)
+    green=$(tput setaf 2)
+    blue=$(tput setaf 4)
+    reset=$(tput sgr0)
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\] (\D{%T}) \[$red\]\u\[$reset\]@\[$green\]\h\[$reset\]:\[$blue\]\w\[$reset\]\$ '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -107,7 +112,5 @@ VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 source /usr/local/bin/virtualenvwrapper.sh
 source /usr/share/bash-completion/completions/git
 export PIP_VIRTUALENV_BASE=/home/iamtushar/.virtualenvs
-
-export PROMPT_COMMAND="echo -n \[\$(date +%T)\]\ "
 
 . ~/.bashrc_local
