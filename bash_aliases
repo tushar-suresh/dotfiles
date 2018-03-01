@@ -3,6 +3,7 @@ alias ll='ls -lFtrh'
 alias kk='ls -lFth'
 alias c='clear'
 alias cleanpyc='find . -name *.pyc -delete'
+alias ora='less +F "$(ls -rt | tail -1)"'
 
 # Copy stdin content to clipboard
 alias x='xclip -selection clipboard'
@@ -30,3 +31,5 @@ alias utc='TZ=UTC date'
 alias rm='rm -v'
 alias cp='cp -v'
 alias mv='mv -v'
+
+alias update='sudo apt update && sudo apt upgrade && sudo apt autoremove && sudo apt autoclean'
