@@ -75,3 +75,7 @@ map <C-\> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 
 " vv to generate new vertical split
 nnoremap <silent> vv <C-w>v
+
+
+"" File type specific settings
+autocmd FileType python setlocal colorcolumn=120
