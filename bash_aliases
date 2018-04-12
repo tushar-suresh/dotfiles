@@ -33,3 +33,12 @@ alias cp='cp -v'
 alias mv='mv -v'
 
 alias update='sudo apt update && sudo apt upgrade && sudo apt autoremove && sudo apt autoclean'
+
+ag_replace() {
+  if [ -z "$1" ]
+    then
+      echo "No argument supplied"
+  else
+      ag -l $1 | xargs sed -i -e "s/$1/$2/g"
+  fi
+}

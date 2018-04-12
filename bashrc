@@ -104,10 +104,6 @@ cal
 
 cowsay `fortune`
 
-ag_replace() {
-    ag -l $1 | xargs sed -i -e "s/$1/$2/g"
-}
-
 VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 source /usr/local/bin/virtualenvwrapper.sh
 source /usr/share/bash-completion/completions/git
