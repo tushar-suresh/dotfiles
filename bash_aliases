@@ -10,7 +10,7 @@ alias x='xclip -selection clipboard'
 
 # Git stuff
 alias gs='git status'
-alias gb='git branch -vv'
+alias gb='git branch --sort=committerdate -vv'
 alias gd='git diff'
 alias gl='git log -p'
 alias glo='git log --oneline'
