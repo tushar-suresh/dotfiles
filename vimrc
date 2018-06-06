@@ -24,6 +24,7 @@ syntax on
 " CtrlP settings
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_root_markers = ['.root']
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/](build|dist|target|checkpoints|node_modules|vendor|.*egg-info)$',
   \ 'file': '\v\.(pyc|swp|class)$',
