@@ -79,4 +79,4 @@ nnoremap <silent> vv <C-w>v
 
 
 "" File type specific settings
-autocmd FileType python setlocal colorcolumn=120
+autocmd FileType python setlocal colorcolumn=88
