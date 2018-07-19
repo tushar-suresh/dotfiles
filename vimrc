@@ -14,6 +14,7 @@ Plugin 'majutsushi/tagbar.git'
 Plugin 'derekwyatt/vim-scala.git'
 Plugin 'rking/ag.vim.git'
 Plugin 'tpope/vim-fugitive.git'
+Plugin 'junegunn/goyo.vim.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -52,6 +53,11 @@ nmap <CR> o<Esc>
 noremap <F4> :set hlsearch! hlsearch?<CR>
 " TagBar toggle
 noremap <F8> :TagbarToggle<CR>
+
+" Goyo settings
+let g:goyo_width = 120
+let g:goyo_margin_top = 6
+let g:goyo_margin_botoom = 6
 
 imap jj <Esc>
 
