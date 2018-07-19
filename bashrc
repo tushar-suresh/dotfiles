@@ -102,7 +102,7 @@ fi
 
 cal
 
-cowsay `fortune`
+fortune | cowsay -f "$(ls /usr/share/cowsay/cows/ | shuf -n1)"
 
 VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 source /usr/local/bin/virtualenvwrapper.sh
