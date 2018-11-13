@@ -34,6 +34,7 @@ let g:syntastic_python_flake8_exec='~/.virtualenvs/scratch-3.6/bin/flake8'
 
 " NERDTree settings
 let NERDTreeIgnore = ['\.pyc$', '__pycache__', 'dist', 'target', '.*egg-info$', 'checkpoints'] 
+let NERDTreeWinSize=22
 
 " TagBar settings
 let g:tagbar_sort = 0
