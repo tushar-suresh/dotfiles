@@ -29,7 +29,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_check_on_w = 0
 let g:syntastic_python_checkers = ['flake8']
-let g:syntastic_python_flake8_args='--ignore E501'
+let g:syntastic_python_flake8_args='--ignore E501,W503,W504'
 let g:syntastic_python_flake8_exec='~/.virtualenvs/scratch-3.6/bin/flake8'
 
 " NERDTree settings
