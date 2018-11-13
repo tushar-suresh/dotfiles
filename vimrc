@@ -3,12 +3,12 @@ filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/.fzf
 call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 " Keep Plugin commands between vundle#begin/end.
 Plugin 'scrooloose/nerdtree.git'
-Plugin 'kien/ctrlp.vim.git'
 Plugin 'scrooloose/syntastic.git'
 Plugin 'majutsushi/tagbar.git'
 Plugin 'derekwyatt/vim-scala.git'
@@ -21,15 +21,6 @@ call vundle#end()            " required
 
 filetype plugin indent on
 syntax on
-
-" CtrlP settings
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_root_markers = ['.root']
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/](build|dist|target|checkpoints|node_modules|vendor|.*egg-info)$',
-  \ 'file': '\v\.(pyc|swp|class)$',
-  \ }
 
 " Syntastic settings
 let g:syntastic_always_populate_loc_list = 1
@@ -54,6 +45,9 @@ nmap <CR> o<Esc>
 noremap <F4> :set hlsearch! hlsearch?<CR>
 " TagBar toggle
 noremap <F8> :TagbarToggle<CR>
+
+" Use Ctrl-P to FZF
+noremap <c-p> :FZF<cr>
 
 " Goyo settings
 let g:goyo_width = 120
