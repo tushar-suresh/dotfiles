@@ -106,8 +106,13 @@ fortune | cowsay -f "$(ls /usr/share/cowsay/cows/ | shuf -n1)"
 
 VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 source /usr/local/bin/virtualenvwrapper.sh
+export WORKON_HOME="${HOME}/.virtualenvs"
+
 source /usr/share/bash-completion/completions/git
-source /usr/local/bin/quick-directory-aliases.sh
-export PIP_VIRTUALENV_BASE=/home/iamtushar/.virtualenvs
+source /usr/local/bin/quick-directory-aliases
+export VISUAL=vim
+export EDITOR="${VISUAL}"
 
 . ~/.bashrc_local
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
