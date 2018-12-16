@@ -81,4 +81,6 @@ nnoremap <silent> vv <C-w>v
 
 
 "" File type specific settings
-autocmd FileType python setlocal colorcolumn=88
+autocmd FileType python setlocal colorcolumn=120
+autocmd BufNewFile,BufRead *.yaml.jinja,*.yml.jinja set syntax=yaml
+set clipboard=unnamed
