@@ -110,4 +110,8 @@ export EDITOR="${VISUAL}"
 
 . ~/.bashrc_local
 
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+[ -f ~/.fzf.bash ] && . ~/.fzf.bash
+
+# Unlimited command history
+export HISTFILESIZE=
+export HISTSIZE=
