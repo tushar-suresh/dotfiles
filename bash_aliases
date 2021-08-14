@@ -42,3 +42,7 @@ ag_replace() {
       ag -l $1 | xargs sed -i -e "s/$1/$2/g"
   fi
 }
+
+bw-get-password() {
+  bw get password ${1} | tr -d '\n' | xclip -selection clipboard
+}

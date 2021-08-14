@@ -54,7 +54,7 @@ if [ "$color_prompt" = yes ]; then
     green=$(tput setaf 2)
     blue=$(tput setaf 4)
     reset=$(tput sgr0)
-    PS1='\[\033[01;32m\] (\D{%T}) \[$red\]\u\[$reset\]@\[$green\]\h\[$reset\]:\[$blue\]\w\[$reset\]\$ '
+    PS1='\[\033[01;32m\](\D{%T}) \[$red\]\u\[$reset\]@\[$green\]\h\[$reset\]:\[$blue\]\w\[$reset\]\$ '
 else
     PS1='\u@\h:\w\$ '
 fi
@@ -100,7 +100,7 @@ cal
 fortune | cowsay -f "$(ls /usr/share/cowsay/cows/ | shuf -n1)"
 
 VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-source /usr/local/bin/virtualenvwrapper.sh
+source "${HOME}/.local/bin/virtualenvwrapper.sh"
 export WORKON_HOME="${HOME}/.virtualenvs"
 
 source /usr/share/bash-completion/completions/git
@@ -115,3 +115,7 @@ export EDITOR="${VISUAL}"
 # Unlimited command history
 export HISTFILESIZE=
 export HISTSIZE=
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

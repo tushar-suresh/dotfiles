@@ -15,6 +15,7 @@ Plugin 'derekwyatt/vim-scala.git'
 Plugin 'rking/ag.vim.git'
 Plugin 'tpope/vim-fugitive.git'
 Plugin 'junegunn/goyo.vim.git'
+Plugin 'ruby-formatter/rufo-vim.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -83,4 +84,8 @@ nnoremap <silent> vv <C-w>v
 "" File type specific settings
 autocmd FileType python setlocal colorcolumn=120
 autocmd BufNewFile,BufRead *.yaml.jinja,*.yml.jinja set syntax=yaml
+autocmd FileType yaml setlocal shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType ruby setlocal shiftwidth=2 softtabstop=2 expandtab
 set clipboard=unnamed
+noremap <C-u> "*p
+noremap <C-y> "+y
